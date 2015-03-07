@@ -1,0 +1,24 @@
+
+n2h note = 
+    case note of
+        Note "B "  -> Note (B, 4) 1 []
+        Note "C "  -> Note (C, 4) 1 []
+        Note "Db" -> Note (Db, 4) 1 []
+        Note "D "  -> Note (D, 4) 1 []
+        Note "Eb" -> Note (Eb, 4) 1 []
+        Note "E "  -> Note (E, 4) 1 []
+        Note "F "  -> Note (F, 4) 1 []
+        Note "Gb" -> Note (Gb, 4) 1 []
+        Note "G "  -> Note (G, 4) 1 []
+        Note "Ab" -> Note (Ab, 4) 1 []
+        Note "A "  -> Note (A, 4) 1 []
+        Note "Bb" -> Note (Bb, 4) 1 []
+        Note "--" ->  Note (C, 4) 1 []
+
+convert1 notes = map n2h notes 
+
+--convert :: Fugue -> 
+convert2 FugueNote2 (a,b) = zip (convert1 a) (convert1 b)
+
+-- convert3 [(a,b)] -> 
+convert3 ((a,b):rest) = (a :+: b) :=: (convert3 rest) 

@@ -1,0 +1,24 @@
+Presentation 
+
+Welcome!  
+
+Run through the program 
+Run through the chord generator for the fugue
+Run through the random chordChart generator based on the year.  
+
+
+
+
+ivan@ubuntu:~/CompSci$ runhaskell M4IO.hs 1940
+1929
+C6 Dbo7 | Dm7 G7 | C6 Dbo7 | Dm7 G7 | 
+E7 A7 | D7 / G7 / |
+ivan@ubuntu:~/CompSci$ 
+
+
+ivan@ubuntu:~/CompSci$ runhaskell M4IO.hs 1975
+1942
+C | / | D9 / / G7 | C | 
+F Fm | Ab11 / D7#5b9 G9 | C  Dm7 C  / |
+ivan@ubuntu:~/CompSci$ 
+
